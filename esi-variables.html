@@ -1,4 +1,3 @@
-<!--esi<esi:vars>$(QUERY_STRING)</esi:vars>-->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,10 +5,12 @@
 </head>
 <body>
 <p>
+Query String:
+<!--esi<esi:vars>$(QUERY_STRING)</esi:vars>-->  
+</p>
+<p>
 Host: 
-<esi:vars>
-$(HTTP_HOST)
-</esi:vars>
+<!--esi<esi:vars>$(HTTP_HOST)</esi:vars>-->
 </p>
 </body>
 </html>
